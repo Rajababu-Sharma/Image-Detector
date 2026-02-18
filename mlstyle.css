@@ -1,0 +1,98 @@
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("https://static.scientificamerican.com/sciam/cache/file/01C9741F-6F6D-4882-8217D92370325AA7_source.jpg");
+      margin: 0;
+      padding: 20px;
+      /* background: linear-gradient(to right, #e0eafc, #cfdef3); */
+      display: flex;
+      flex-direction: row;
+    }
+    .container {
+      max-width: 65%;
+      background: transparent;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      margin-right: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .sidebar {
+      flex: 1;
+      background: transparent;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      max-height: 100vh;
+      overflow-y: auto;
+      animation: slideIn 1.2s ease-in-out;
+    }
+    h1, h2 {
+      color: #6b21a8;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: white;
+    }
+    input[type="file"] {
+      margin-top: 15px;
+      padding: 12px;
+      border: 2px dashed #a855f7;
+      border-radius: 12px;
+      width: 100%;
+      background-color: transparent;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    input[type="file"]:hover {
+      background-color: #f3e8ff;
+    }
+    .preview {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .preview img {
+      max-width: 150px;
+      height: auto;
+      border: 3px solid #c084fc;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .preview img:hover {
+      transform: scale(1.1);
+    }
+    .result {
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 20px;
+      color: #10b981;
+    }
+    .analysis-box {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #ffffff;
+      border-left: 5px solid #8b5cf6;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(196, 204, 217, 0.08);
+      transition: box-shadow 0.3s ease;
+    }
+    .analysis-box:hover {
+      box-shadow: 0 20px 20px rgba(242, 241, 244, 0.2);
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
